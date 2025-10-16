@@ -1,0 +1,17 @@
+.container {
+  border: 5px solid blue;
+  margin: 0px;
+}
+
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 30px;
+  height: 50px;
+
+  /* try changing the margin properties: */
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 20em;
+}
