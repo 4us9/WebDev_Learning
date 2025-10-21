@@ -10,3 +10,5 @@ console.log("Is Jack's age known?", ages.has("Jack"));
 
 console.log("Does ages have toString?", ages.has("toString")); 
 // → false
+
+let age = "s";

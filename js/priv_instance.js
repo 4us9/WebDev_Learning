@@ -17,3 +17,7 @@ class RandomSource {
 let variable = new RandomSource(10);
 
 console.log(variable.getNumber());
+
+//this is how code gets written 
+
+/

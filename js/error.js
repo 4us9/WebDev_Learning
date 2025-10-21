@@ -7,4 +7,9 @@ function canYouSpotTheProblem()
 	}
 }
 
+function canYouSpotTheProblem() 
+{
+    
+}
+
 canYouSpotTheProblem();
