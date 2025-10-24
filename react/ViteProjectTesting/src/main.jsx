@@ -16,6 +16,7 @@ import JSLogic from './pages/JS-logic.jsx'
 
 import Profile2 from './pages/props.jsx'
 
+import List from './pages/List.jsx'
 // Get the root element once
 const rootElement = document.getElementById('root');
 
@@ -48,6 +49,8 @@ createRoot(rootElement).render(
 
         {/*Route 7: Learning About Props*/}
         <Route path = "/props-app" element = {<Profile2/>} />
+
+        <Route path="/lists-app" element = {<List/>} />
 
         {/* You can add more mini-apps here: */}
         {/* <Route path="/calculator" element={<CalculatorApp />} /> */}
