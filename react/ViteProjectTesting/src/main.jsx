@@ -3,7 +3,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // 👈 NEW IMPORTS
-
 import './index.css';
 
 // The components you want to use as "apps"
@@ -11,6 +10,7 @@ import App from './App.jsx';            // Your default app/component
 import TestApp from './pages/TestApp.jsx'; // Your first mini-app
 import Gallery from './pages/Gallery.jsx';
 import GallerySplit from './pages/Gallery-split.jsx';
+import HTML1 from './pages/html.jsx'
 
 // Get the root element once
 const rootElement = document.getElementById('root');
@@ -35,11 +35,14 @@ createRoot(rootElement).render(
         {/* Route 4: Gallery app split apart*/}
         <Route path="/gallery-split-app" element={<GallerySplit/>} />
 
+        {/*Route 5: Now I understand what <section> is: a converter of HTML*/}
+        <Route path="/html" element = {<HTML1/>} />
+
         {/* You can add more mini-apps here: */}
         {/* <Route path="/calculator" element={<CalculatorApp />} /> */}
         
         {/* OPTIONAL: A catch-all route for 404 pages */}
-        {/* <Route path="*" element={<h1>404 Not Found</h1>} /> */}
+        {/* <Route path="*" elemuent={<h1>404 Not Found</h1>} /> */}
         
       </Routes>
     </BrowserRouter>
