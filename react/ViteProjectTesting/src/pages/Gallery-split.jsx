@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile1 from '../Profile.jsx';
+import Profile1 from '../components/Profile.jsx';
 
 //THE MAIN COMPONENT. Still export default
 
