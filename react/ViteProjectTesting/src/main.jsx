@@ -12,6 +12,10 @@ import Gallery from './pages/Gallery.jsx';
 import GallerySplit from './pages/Gallery-split.jsx';
 import HTML1 from './pages/html.jsx'
 
+import JSLogic from './pages/JS-logic.jsx'
+
+import Profile2 from './pages/props.jsx'
+
 // Get the root element once
 const rootElement = document.getElementById('root');
 
@@ -37,6 +41,13 @@ createRoot(rootElement).render(
 
         {/*Route 5: Now I understand what <section> is: a converter of HTML*/}
         <Route path="/html" element = {<HTML1/>} />
+
+      
+        {/* Route 6: using some JS logic */}
+        <Route path="/js-logic" element = {<JSLogic/>} /> 
+
+        {/*Route 7: Learning About Props*/}
+        <Route path = "/props-app" element = {<Profile2/>} />
 
         {/* You can add more mini-apps here: */}
         {/* <Route path="/calculator" element={<CalculatorApp />} /> */}
