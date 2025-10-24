@@ -9,6 +9,8 @@ import './index.css';
 // The components you want to use as "apps"
 import App from './App.jsx';            // Your default app/component
 import TestApp from './pages/TestApp.jsx'; // Your first mini-app
+import Gallery from './pages/Gallery.jsx';
+import GallerySplit from './pages/Gallery-split.jsx';
 
 // Get the root element once
 const rootElement = document.getElementById('root');
@@ -26,7 +28,13 @@ createRoot(rootElement).render(
         
         {/* Route 2: Your first mini-app */}
         <Route path="/test-app" element={<TestApp />} /> 
+
+        {/* Route 3: Gallery app from making your first UI */}
+        <Route path="/gallery-app" element={<Gallery/>} />
         
+        {/* Route 4: Gallery app split apart*/}
+        <Route path="/gallery-split-app" element={<GallerySplit/>} />
+
         {/* You can add more mini-apps here: */}
         {/* <Route path="/calculator" element={<CalculatorApp />} /> */}
         
